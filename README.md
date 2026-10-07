@@ -1,4 +1,3 @@
-![Uploading GET.png…]()
 # Lab7_DG-KDPM
 
 1. Giới thiệu về Postman
@@ -55,6 +54,8 @@ Kết quả: Trả về danh sách các khóa học dưới dạng mảng JSON (
 Yêu cầu POST (Tạo mới dữ liệu)
 Được sử dụng để thêm một khóa học mới vào hệ thống.
 
+<img width="1425" height="1010" alt="GET" src="https://github.com/user-attachments/assets/760768a7-e760-4606-a507-40bca2713999" />
+
 Method: POST
 
 URL: {{baseUrl}}/courses
@@ -69,31 +70,7 @@ JSON
 }
 Thao tác: Bấm Send. Trả về thông tin khóa học vừa tạo (Status 201 Created).
 
-Yêu cầu PUT (Cập nhật dữ liệu)
-Được sử dụng để ghi đè/chỉnh sửa thông tin của một khóa học đã tồn tại (Ví dụ cập nhật khóa học có ID là 123).
-
-Method: PUT
-
-URL: {{baseUrl}}/courses/123
-
-Body: Chọn raw -> JSON.
-
-JSON
-{
-    "name": "Khóa học Postman nâng cao",
-    "description": "Bổ sung thêm phần CI/CD",
-    "price": 700000
-}
-Thao tác: Bấm Send. (Status 200 OK).
-
-Yêu cầu DELETE (Xóa dữ liệu)
-Được sử dụng để xóa một khóa học khỏi hệ thống.
-
-Method: DELETE
-
-URL: {{baseUrl}}/courses/123
-
-Thao tác: Bấm Send. Khóa học sẽ bị xóa (Status 200 OK hoặc 204 No Content).
+<img width="1917" height="972" alt="POsT" src="https://github.com/user-attachments/assets/75a5d6dc-7b2c-44b3-ba2d-544a0115272c" />
 
 Viết Test (Kiểm tra tự động)
 Để đảm bảo API hoạt động đúng, bạn chuyển sang tab Tests và viết mã JavaScript. Ví dụ: kiểm tra xem API có trả về mã 200 hay không.
@@ -151,5 +128,5 @@ JSON
     },
     "name": "Hanoi"
 }
-Ở phần phản hồi này, bạn có thể dễ dàng thấy nhiệt độ (temp) đang là 28.5°C và độ ẩm (humidity) là 75%.<img width="1917" height="972" alt="POsT" src="https://github.com/user-attachments/assets/75a5d6dc-7b2c-44b3-ba2d-544a0115272c" />
+Ở phần phản hồi này, bạn có thể dễ dàng thấy nhiệt độ (temp) đang là 28.5°C và độ ẩm (humidity) là 75%.
 <img width="1024" height="547" alt="DuBaothoitiet" src="https://github.com/user-attachments/assets/67d9d789-27e4-4063-bb8b-583f7a995381" />
