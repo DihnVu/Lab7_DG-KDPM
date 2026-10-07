@@ -1,3 +1,4 @@
+![Uploading GET.png…]()
 # Lab7_DG-KDPM
 
 1. Giới thiệu về Postman
